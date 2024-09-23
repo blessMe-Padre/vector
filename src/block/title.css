@@ -3,5 +3,6 @@
     font-weight: 500;
     color: var(--red);
     text-align: center;
+    line-height: 1.1;
     margin-bottom: clamp(1.875rem, 1.307rem + 2.424vw, 3.125rem);
 }

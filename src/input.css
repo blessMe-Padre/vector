@@ -12,6 +12,7 @@
 @import './block/catalog.css';
 @import './block/title.css';
 @import './block/card.css';
+@import './block/conditions.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -26,9 +27,8 @@
 
 .image-wrapper {
     position: relative;
-    border-radius: 20px;
+    border-radius: 6px;
     overflow: hidden;
-    height: 100%;
 }
 
 .image-wrapper img {
@@ -37,11 +37,10 @@
     -o-object-fit: cover;
     object-fit: cover;
     transition: transform 0.3s ease;
-    transform: scale(1.1);
 }
 
 .image-wrapper img:hover {
-    transform: scale(1);
+    transform: scale(1.1);
 }
 
 

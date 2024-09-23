@@ -6,16 +6,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 13px 20px;
+  padding: 13px 44px;
   font-family: "Involve", sans-serif;
   font-weight: 400;
   font-size: 16px;
   border: 1px solid #151515;
   color: #151515;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #5278DA;
+.default-button:hover {
+  background-color: #151515;
   color: #ffffff;
 }
 
@@ -880,8 +881,34 @@ button.swiper-pagination-bullet{
 
 .catalog__list {
   display: grid;
-  grid-template-columns: repeat(3, fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card__wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .catalog__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card__wrapper {
+    flex-direction: row;
+  }
 }
 
 .title {
@@ -889,7 +916,39 @@ button.swiper-pagination-bullet{
   font-weight: 500;
   color: var(--red);
   text-align: center;
+  line-height: 1.1;
   margin-bottom: clamp(1.875rem, 1.307rem + 2.424vw, 3.125rem);
+}
+
+.card {
+  padding-bottom: 20px;
+}
+
+.card__title {
+  font-family: "Involve", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #151515;
+  margin: 20px auto;
+}
+
+.card__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card__price {
+  font-family: "Involve", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.conditions {
 }
 
 /* Импорт TailWind */
@@ -1621,9 +1680,8 @@ body {
 
 .image-wrapper {
   position: relative;
-  border-radius: 20px;
+  border-radius: 6px;
   overflow: hidden;
-  height: 100%;
 }
 
 .image-wrapper img {
@@ -1632,11 +1690,10 @@ body {
   -o-object-fit: cover;
   object-fit: cover;
   transition: transform 0.3s ease;
-  transform: scale(1.1);
 }
 
 .image-wrapper img:hover {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 /* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
