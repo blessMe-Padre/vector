@@ -15,6 +15,7 @@
 @import './block/conditions.css';
 @import './block/rent.css';
 @import './block/contacts.css';
+@import './block/breadcrumbs.css';
 
 /* Импорт TailWind */
 @tailwind base;
