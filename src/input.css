@@ -13,6 +13,7 @@
 @import './block/title.css';
 @import './block/card.css';
 @import './block/conditions.css';
+@import './block/rent.css';
 
 /* Импорт TailWind */
 @tailwind base;
