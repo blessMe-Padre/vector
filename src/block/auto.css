@@ -1,0 +1,21 @@
+.auto {}
+
+.auto__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.auto__item {
+    overflow: hidden;
+}
+
+@media (max-width: 920px) {
+    .auto__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .swiper-slide img {
+        margin: 0 auto;
+    }
+}

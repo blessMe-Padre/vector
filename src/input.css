@@ -16,6 +16,7 @@
 @import './block/rent.css';
 @import './block/contacts.css';
 @import './block/breadcrumbs.css';
+@import './block/auto.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -25,7 +26,9 @@
 :root {
     --white: #ffffff;
     --black: #000000;
+    --default-black: #1d1d1d;
     --red: #b62528;
+    --light-gray: color: rgba(0, 0, 0, 0.6);
 }
 
 .image-wrapper {

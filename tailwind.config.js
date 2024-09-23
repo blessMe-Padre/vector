@@ -15,8 +15,10 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       'white': '#ffffff',
-      'default-black': '#000000',
+      'black': '#000000',
+      'default-black': '#1d1d1d',
       'red': '#b62528',
+      'light-gray': 'rgba(0, 0, 0, 0.6)',
     },
 
     container: {
