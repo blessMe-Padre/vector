@@ -17,6 +17,7 @@
 @import './block/contacts.css';
 @import './block/breadcrumbs.css';
 @import './block/auto.css';
+@import './block/popup.css';
 
 /* Импорт TailWind */
 @tailwind base;

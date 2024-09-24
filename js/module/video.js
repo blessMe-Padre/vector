@@ -1,12 +1,8 @@
 export const initVideo = () => {
-    // Функция для смены источника видео в зависимости от ширины экрана
-    function updateVideoSource() {
-        var video = document.getElementById('myVideo');
-        var source = document.getElementById('videoSrc');
-        console.log(video);
-        console.log(source);
-        console.log(window.innerWidth);
+    const video = document.getElementById('myVideo');
 
+    function updateVideoSource() {
+        const source = document.getElementById('videoSrc');
         if (window.innerWidth < 450) {
             source.setAttribute('src', './src/video/timelapse2.mp4');
         } else {
@@ -17,9 +13,11 @@ export const initVideo = () => {
 
     }
 
-    // Проверяем при загрузке страницы
-    window.onload = updateVideoSource;
+    if (video) {
+        // Проверяем при загрузке страницы
+        window.onload = updateVideoSource;
 
-    // Проверяем при изменении размера окна
-    window.onresize = updateVideoSource;
+        // Проверяем при изменении размера окна
+        window.onresize = updateVideoSource;
+    }
 }
